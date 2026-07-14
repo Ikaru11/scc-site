@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Computer Comunity</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Kontak</h1>
+        <nav>
+            <a href="index.html">Tentang</a>
+            <a href="materi.html">Materi</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <p>Instagram: @scomputerc</p>
+
+         <div class="daftar-box">
+            <h3>Pendaftaran Anggota Baru</h3>
+            <p>Klik tombol di bawah untuk melakukan pendaftaran secara online.</p>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtZOhZoq8xDYzt17m156PNuku2WBu5T53RCwvS0XyKBV5E-A/viewform" target="_blank" class="btn-primary">
+                Daftar Sekarang </a>
+    </div>
+</section>
+<!-- SECTION KONTAK -->
+
+<section class="section">
+    <div class="container">
+        <h2 style="text-align:center;">Kontak Tim</h2>
+        <p style="text-align:center; color:#94a3b8; margin-bottom:25px;">
+            Hubungi tim kami untuk informasi ekstrakurikuler
+        </p>
+
+
+    <div class="grid-kontak">
+
+        <!-- PEMBINA -->
+        <a href="https://wa.me/6281234567890" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/pak1.jpeg">
+                <h3>Pembina</h3>
+                <p>Ferry Ardiatna, ST</p>
+            </div>
+        </a>
+
+        <!-- KETUA -->
+        <a href="https://wa.me/6285861412070" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/evan.jpeg">
+                <h3>Ketua</h3>
+                <p>Moch Epan Epriansah</p>
+            </div>
+        </a>
+
+        <!-- OFFICE -->
+        <a href="https://wa.me/6285924184697" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/Fajar.jpeg">
+                <h3>Office</h3>
+                <p>Fajar Abdul Aziz</p>
+            </div>
+        </a>
+
+        <!-- DESAIN -->
+        <a href="https://wa.me/6289526590688" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/nita.jpeg">
+                <h3>Desain</h3>
+                <p>Siti Sopianti Anita Alawiah</p>
+            </div>
+        </a>
+
+        <!-- WEB -->
+        <a href="https://wa.me/6285220540079" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/gw2.jpeg">
+                <h3>Web Dev</h3>
+                <p>Muhammad Athaya Al Fathir</p>
+            </div>
+        </a>
+
+        <!-- ESPORT -->
+        <a href="https://wa.me/6283893235181" target="_blank" class="contact-link">
+            <div class="contact-card">
+                <img src="aset/Nopal.jpeg">
+                <h3>Esport</h3>
+                <p>M Naufal El-Siroji</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+
+</section>
+
+<style>
+/* GRID RAPAT & GAK BOLONG */
+.grid-kontak {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid-kontak {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-kontak {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LINK */
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD COMPACT */
+.contact-card {
+    background: #020617;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    text-align: center;
+    transition: 0.25s;
+}
+
+/* HOVER */
+.contact-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+/* FOTO */
+.contact-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* TEXT */
+.contact-card h3 {
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #38bdf8;
+}
+
+.contact-card p {
+    font-size: 11px;
+    margin: 2px 0;
+    color: #94a3b8;
+}
+</style>
+
+<!-- TOMBOL LAPOR BUG -->
+
+<a href="https://wa.me/6285220540079?text=Halo%20saya%20ingin%20melaporkan%20bug%20di%20website%20SCC"
+target="_blank"
+class="bug-button">
+🐞 Lapor Bug </a>
+
+<style>
+.bug-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #020617;
+    color: #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* HOVER */
+.bug-button:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* KLIK */
+.bug-button:active {
+    transform: scale(0.95);
+}
+</style>
+<footer>
+    <p>© 2025-2026 Student Computer Comunity</p>
+</footer>
+</body>
+</html>         

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Computer Comunity</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Student Computer Comunity</h1>
+        <nav>
+            <a href="index.html">Tentang</a>
+            <a href="materi.html">Materi</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Membangun Skill Digital Siswa</h2>
+        <p>Mengembangkan Keterampilan Digital, Kreativitas, dan Inovasi Siswa di Era Teknologi.</p>
+    </div>
+</section>
+
+
+<section class="section1">
+    <div class="container">
+        <h2>Struktur Organisasi</h2>
+
+```
+    <div class="profile-group">
+
+        <!-- Pembina -->
+        <div class="profile-card">
+            <img src="aset/pak1.jpeg" alt="Pembina">
+
+            <div class="content">
+                <h3>Pembina</h3>
+
+                <p><strong>Nama:</strong> Ferry Ardiatna, ST</p>
+                <p><strong>Tahun:</strong> 2013-seterusnya</p>
+                <p><strong>Keahlian:</strong> Manajemen organisasi</p>
+            </div>
+        </div>
+
+        <!-- Ketua -->
+        <div class="profile-card">
+            <img src="aset/evan.jpeg" alt="Ketua">
+
+            <div class="content">
+                <h3>Ketua Masa Bakti</h3>
+
+                <p><strong>Nama:</strong> Moch Epan Epriansah </p>
+                <p><strong>Kelas:</strong> XII-A</p>
+                <p><strong>Tahun:</strong> 2025 - 2026</p>
+
+                <h3><strong>Prestasi:</strong></h3>
+                <p>Juara 1 Kyorugi Junior U.51KG Putra di Kejuaraan Taekwondo ITN Open IX Antar Unit se-Jawa Barat. </p>
+                <p><strong>Keahlian:</strong> Editor sesuai mood</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+```
+
+</section>
+
+
+<section class="section1">
+    <div class="container">
+        <h2>Tentang</h2>
+        <p>
+            Student Computer Community (SCC) merupakan ekstrakurikuler yang berfokus pada pengembangan keterampilan digital dan teknologi bagi siswa. Kegiatan dalam SCC tidak hanya terbatas pada coding, tetapi juga mencakup berbagai bidang seperti pengolahan data perkantoran (Office), desain grafis, pengembangan web, hingga esport. Melalui pembelajaran yang bersifat praktis dan kolaboratif, SCC bertujuan untuk membentuk siswa yang kreatif, inovatif, serta mampu mengikuti perkembangan teknologi di era digital.
+
+Selain itu, SCC juga menjadi wadah bagi siswa untuk menyalurkan minat dan bakat, bekerja dalam tim, serta menghasilkan karya-karya digital yang bermanfaat. Dengan bimbingan pembina dan pengajar yang berpengalaman, diharapkan setiap anggota dapat mengembangkan kemampuan secara optimal dan siap menghadapi tantangan di dunia teknologi di masa depan.
+
+        </p>
+    </div>
+</section>
+
+<section class="section1 alt">
+    <div class="container">
+        <h2>Galeri</h2>
+        <div class="grid1">
+
+
+        <div class="card1">
+            <img src="aset/gm4.jpeg" onclick="openLightbox(this)"alt="Foto 1"><button class="like-btn" onclick="like(this)">❤️ 0</button>
+        </div>
+
+        <div class="card1">
+            <img src="aset/gm2.jpeg" onclick="openLightbox(this)"alt="Foto 2"><button class="like-btn" onclick="like(this)">❤️ 0</button>
+        </div>
+
+        <div class="card1">
+            <img src="aset/gm3.jpeg" onclick="openLightbox(this)"alt="Foto 3"><button class="like-btn" onclick="like(this)">❤️ 0</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+</section>
+
+</section>
+
+<footer>
+    <p>© 2025-2026 Student Computer Comunity</p>
+</footer>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" onclick="event.stopPropagation()">
+</div>
+
+
+<script>
+function openLightbox(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+document.querySelector(".close").onclick = function() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+<script>
+function openLightbox(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+<script>
+function like(btn) {
+    let count = parseInt(btn.innerText.split(" ")[1]);
+    count++;
+    btn.innerText = "❤️ " + count;
+}
+</script>
+
+<script>
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeLightbox();
+});
+</script>
+
+</body>
+
+<!-- TOMBOL LAPOR BUG -->
+
+<a href="https://wa.me/6285220540079?text=Halo%20saya%20ingin%20melaporkan%20bug%20di%20website%20SCC"
+target="_blank"
+class="bug-button">
+🐞 Lapor Bug </a>
+
+<style>
+.bug-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #020617;
+    color: #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* HOVER */
+.bug-button:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* KLIK */
+.bug-button:active {
+    transform: scale(0.95);
+}
+</style>
+
+</html>

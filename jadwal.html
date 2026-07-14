@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Computer Comunity</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Jadwal</h1>
+        <nav>
+            <a href="index.html">Tentang</a>
+            <a href="materi.html">Materi</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+
+<section class="section">
+    <div class="container">
+        <h2 style="text-align:center;">Jadwal Kegiatan</h2>
+<p style="color:#94a3b8; margin-bottom:20px;">
+Jadwal kegiatan ekstrakurikuler komputer yang dilakukan setiap minggu.
+</p>
+
+    <div class="timeline">
+
+        <!-- ITEM -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Senin</h3>
+                <p><strong>Materi:</strong> Office</p>
+                <p><strong>Jam:</strong> 16:00 - 17:00</p>
+                <p><strong>Pembina:</strong> Kang.Fajar</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Selasa</h3>
+                <p><strong>Materi:</strong> Desain</p>
+                <p><strong>Jam:</strong> 16:00 - 17:00</p>
+                <p><strong>Pembina:</strong> Teh.Anita</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Rabu</h3>
+                <p><strong>Materi:</strong> Web Development</p>
+                <p><strong>Jam:</strong> 16:00 - 17:00</p>
+                <p><strong>Pembina:</strong> Kang.Athaya</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Kamis</h3>
+                <p><strong>Materi:</strong> Esport</p>
+                <p><strong>Jam:</strong> 16:00 - 17:00</p>
+                <p><strong>Pembina:</strong> Coach.Naufal</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</section>
+
+<style>
+/* TIMELINE */
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding-left: 30px;
+    border-left: 2px solid #1e293b;
+}
+
+/* ITEM */
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* TITIK */
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #38bdf8;
+    border-radius: 50%;
+}
+
+/* CARD */
+.timeline-content {
+    background: #020617;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    border-color: #38bdf8;
+}
+
+/* TEXT */
+.timeline-content h3 {
+    margin-bottom: 5px;
+    color: #38bdf8;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    margin: 3px 0;
+    color: #94a3b8;
+}
+</style>
+
+
+<p style="margin-top:20px; font-size:13px; color:#94a3b8;">
+* Jadwal dapat berubah sesuai kondisi dan kegiatan sekolah
+</p>
+
+<!-- TOMBOL LAPOR BUG -->
+
+<a href="https://wa.me/6285220540079?text=Halo%20saya%20ingin%20melaporkan%20bug%20di%20website%20SCC"
+target="_blank"
+class="bug-button">
+🐞 Lapor Bug </a>
+
+<style>
+.bug-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #020617;
+    color: #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* HOVER */
+.bug-button:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* KLIK */
+.bug-button:active {
+    transform: scale(0.95);
+}
+</style>
+<footer>
+    <p>© 2025-2026 Student Computer Comunity</p>
+</footer>
+</body>
+</html>

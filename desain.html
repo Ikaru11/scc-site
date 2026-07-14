@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi Desain</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.profile { display:flex; align-items:center; gap:30px; flex-wrap:wrap; }
+.profile-text { flex:1; }
+.profile-img { width:150px; height:150px; border-radius:50%; object-fit:cover; }
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>Materi Desain</h1>
+<nav>
+<a href="index.html">Tentang</a>
+<a href="materi.html">Materi</a>
+<a href="jadwal.html">Jadwal</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+</div>
+</header>
+
+<section class="section">
+<div class="container">
+<h2>Pengajar</h2>
+<div class="profile">
+<div class="profile-text">
+<h3> Siti Sopianti Anita Alawiah</h3>
+<p><strong>Bidang:</strong> Desain</p>
+<p><strong>Pengalaman:</strong> 2+ tahun</p>
+<p>desain, open Commission.</p>
+</div>
+<img src="aset/nita.jpeg" class="profile-img">
+</div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+<h2>Tentang Materi</h2>
+<p>Materi desain berfokus pada pemahaman prinsip desain dan penggunaan tools desain.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2>Kegunaan</h2>
+<ul class="jadwal">
+<li>Membuat poster dan konten visual</li>
+<li>Meningkatkan kreativitas</li>
+<li>Digunakan dalam media sosial dan branding</li>
+</ul>
+</div>
+</section>
+<!-- TOMBOL LAPOR BUG -->
+
+<a href="https://wa.me/6285220540079?text=Halo%20saya%20ingin%20melaporkan%20bug%20di%20website%20SCC"
+target="_blank"
+class="bug-button">
+🐞 Lapor Bug </a>
+
+<style>
+.bug-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #020617;
+    color: #e5e7eb;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+/* HOVER */
+.bug-button:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* KLIK */
+.bug-button:active {
+    transform: scale(0.95);
+}
+</style>
+
+<footer>
+    <p>© 2025-2026 Student Computer Comunity</p>
+</footer>
+</body>
+</html>
